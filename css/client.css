@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.client-section
+{
+background: url(bg.jpg);    
+background-size: cover;
+padding:60px 0;
+
+}
+
+.inner-width
+{
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.client-title
+{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.border
+{
+    width:160px;
+    height:2px;
+    background:darkslategray;
+    margin: 40px auto;
+
+}
+.client-container
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.client-box
+{
+    max-width: 25%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.card
+{
+    margin-top:30px;
+}
+
+.card-img-top
+{
+    height:170px;
+    width:275px;
+}
+.clients-title
+{
+    margin-top: 20px;
+    text-align: center;
+    margin-right:50px;
+    text-transform: uppercase;
+    color:#fff;
+}
+.card-text
+{
+color:darkslategray;
+
+}
