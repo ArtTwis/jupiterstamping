@@ -31,5 +31,6 @@ p {
 .aboutUs_image img {
 	height: 70%;
 	width: 90%;
-	border-radius: 5px;
+	border-radius: 10px;
+	opacity: 0.9;
 }
