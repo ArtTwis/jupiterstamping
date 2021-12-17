@@ -61,6 +61,14 @@
 	.aboutUs_image img {
 		height: 100%;
 	}
+
+	.client-container .box {
+		width: 100%;
+	}
+
+	.vm-container .box {
+		width: 100%;
+	}
 }
 
 @media (max-width: 990px) {
@@ -98,5 +106,13 @@
 
 	.aboutUs_image img {
 		height: 100%;
+	}
+
+	.client-container .box {
+		width: 100%;
+	}
+
+	.vm-container .box {
+		width: 100%;
 	}
 }
