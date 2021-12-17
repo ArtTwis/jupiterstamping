@@ -65,8 +65,8 @@ nav ul li a:hover,
 	display: none;
 }
 
-.mainContainer {
-	min-height: 100vh;
+.mainContainer_common {
+	min-height: calc(100vh - 80px);
 	max-height: fit-content;
 	background-color: #111;
 }
@@ -200,11 +200,17 @@ footer .container .sec.aboutus p {
 
 .copyrightText {
 	width: 100%;
-	height: 45px;
+	height: 50px;
 	background: #181818;
-	padding: 8px 100px;
-	text-align: center;
 	color: #999;
+	padding: 0px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyrightText p {
+	margin: 0;
 }
 
 .copyrightText a {
