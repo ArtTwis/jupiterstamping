@@ -18,8 +18,13 @@ p {
 	flex-basis: 0;
 }
 
-.aboutUs_mainContainer .content {
+.aboutUs_mainContainer .aboutUs_content {
 	padding: 25px;
+	letter-spacing: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .aboutUs_image {
