@@ -101,9 +101,3 @@
 	color: whitesmoke;
 	line-height: 24px;
 }
-
-@media (max-width: 767px) {
-	.client-container .box {
-		width: 100%;
-	}
-}
