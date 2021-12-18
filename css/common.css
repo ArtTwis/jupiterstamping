@@ -97,9 +97,9 @@ footer .container .sec.aboutus {
 	background: #fd5618;
 }
 
-.sci li a .fab {
-	color: #fff;
-	font-size: 20px;
+.sci li a img {
+	width: 25px;
+	height: 25px;
 }
 
 .quickLinks {
