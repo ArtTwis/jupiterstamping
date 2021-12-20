@@ -30,11 +30,11 @@
             <div class="contact-section">
                 <h1>Contact Us</h1>
                 <div class="border"></div>
-                    <form class="contact-form" action="index.html" method="post">
-                        <input type="text" class="contact-form-text" placeholder="Enter your Name">
-                        <input type="Email" class="contact-form-text" placeholder="Enter your email">
-                        <input type="text" class="contact-form-text" placeholder="Contact Number">
-                        <textarea  class="contact-form-text" placeholder="your Message"></textarea>
+                    <form class="contact-form" action="javascript:sendMail()" method="post">
+                        <input type="text" class="contact-form-text" name="Name" id="Name" placeholder="Enter your Name">
+                        <input type="Email" class="contact-form-text" name="Sender" id="Sender" placeholder="Enter your email">
+                        <input type="text" class="contact-form-text" name="Mobile" id="Mobile" placeholder="Contact Number">
+                        <textarea  class="contact-form-text" name="Message" id="Message" placeholder="your Message"></textarea>
                         <input type="submit" class="contact-form-btn" value="Send">
                     </form>
 
@@ -128,4 +128,47 @@
             </p>
         </div>
     </Body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+    <script>
+
+        function sendMail()
+        {
+            var name = $('#Name').val();
+            var sender = $('#Sender').val();
+            var mobile = $('#Mobile').val();
+            var message = $('#Message').val();
+
+            var Body = 'Name: '+name+'<br> Sender: '+sender+'<br> Mobile: '+mobile+'<br> Message: '+ message;
+
+        }
+
+
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "gaurav1910kl@gmail.com",
+        Password : "",
+        To : 'iamgauravsharma1910@gmail.com',
+        From : 'sender',
+        Subject : "New Mail on website from: " +name,
+        Body : Body
+        }).then(
+        message => {
+
+            if(message=='OK')
+            {
+                alert("Thank you Your Email has been Send. Thanks for connecting")
+            }
+                else
+                {
+                    console.error(message);
+                    alert('error in sending message.')
+                }
+        }
+        );
+    </script>
+
 </html>
