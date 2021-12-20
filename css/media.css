@@ -70,12 +70,12 @@
 		font-size: 25px;
 	}
 
-	.client-container .box {
+	.card_container .box {
 		width: 100%;
 	}
 
-	.vm-container .box {
-		width: 100%;
+	.section-title {
+		font-size: 25px;
 	}
 }
 
@@ -124,11 +124,44 @@
 		font-size: 25px;
 	}
 
-	.client-container .box {
+	.card_container .box {
 		width: 100%;
 	}
 
-	.vm-container .box {
-		width: 100%;
+	.section-title {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.carousel_button {
+		display: none;
+	}
+
+	.carousel {
+		height: 450px;
+		width: 90%;
+	}
+}
+
+@media (max-width: 768px) {
+	.carousel_button {
+		display: none;
+	}
+
+	.carousel {
+		height: 350px;
+		width: 90%;
+	}
+}
+
+@media (max-width: 375px) {
+	.carousel_button {
+		display: none;
+	}
+
+	.carousel {
+		height: 230px;
+		width: 90%;
 	}
 }
