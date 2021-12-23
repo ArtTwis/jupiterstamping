@@ -21,7 +21,9 @@
 }
 
 .carousel_slide {
-	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -85,4 +87,32 @@
 .mt-64 {
 	margin-top: 2rem;
 	margin-bottom: 6rem;
+}
+
+.carousel_slide1{
+background-image: url('../assets/media/Jupiter-Compress/Outer\ area.png');
+}
+
+.carousel_slide3{
+	background-image: url('../assets/media/Jupiter-Compress/CTL\ 200.png');
+}
+
+.carousel_slide4{
+	background-image: url('../assets/media/Jupiter-Compress/CTL\ 300.png');
+}
+
+.dark{
+	width: 100%;
+	height: 100%;
+	background-color: #000000a9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.dark span{
+color: white;
+font-size: 4rem;
+margin: 0 150px;
 }

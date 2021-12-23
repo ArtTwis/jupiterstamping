@@ -1,11 +1,13 @@
 h1 {
 	margin-top: 20px;
 	color: white;
+	font-size: 50px;
 }
 
 p {
 	margin-top: 20px;
 	color: whitesmoke;
+	font-size: 25px;
 }
 
 .aboutUs_mainContainer {

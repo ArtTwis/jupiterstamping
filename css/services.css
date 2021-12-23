@@ -63,6 +63,13 @@
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+
+.section-summary{
+	font-size: 15px;
+	margin: 0 90px;
+	text-align: center;
+	color: whitesmoke;
+}
 .service-desc {
 	font-size: 14px;
 }
