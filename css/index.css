@@ -93,12 +93,8 @@
 background-image: url('../assets/media/Jupiter-Compress/Outer\ area.png');
 }
 
-.carousel_slide3{
-	background-image: url('../assets/media/Jupiter-Compress/CTL\ 200.png');
-}
-
 .carousel_slide4{
-	background-image: url('../assets/media/Jupiter-Compress/CTL\ 300.png');
+	background-image: url('../assets/media/transformer-slitting-line-2-full.jpg');
 }
 
 .dark{
@@ -115,4 +111,12 @@ background-image: url('../assets/media/Jupiter-Compress/Outer\ area.png');
 color: white;
 font-size: 4rem;
 margin: 0 150px;
+}
+
+@media screen and (max-width: 760px) {
+	.dark span{
+		color: white;
+		font-size: 1rem;
+		margin: 0 20px;
+	}
 }

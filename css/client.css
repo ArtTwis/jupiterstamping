@@ -4,50 +4,37 @@
 	box-sizing: border-box;
 }
 
-.client-section {
-	background: url(bg.jpg);
-	background-size: cover;
-	padding: 60px 0;
-}
-
-.inner-width {
-	width: 100%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 0 20px;
-	overflow: hidden;
+.mainContainer_common{
+	padding: 0px 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .client-title {
-	color: #fff;
+	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 50px;
+	font-size: 4rem;
 }
 
 .client-summary{
 	margin-top: 16px;
-color: whitesmoke;
-text-align: center;
-font-size: 25px;
-font-weight: 300;
+    color: whitesmoke;
+    font-size: 1.5rem;
+	text-align: center;
 }
 
-.border {
-	width: 300px;
-	height: 2px;
-	background: whitesmoke;
-	margin: 40px auto;
-}
-.card_container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.client-box {
-	max-width: 25%;
-	padding: 10px;
-	text-align: center;
-	color: #fff;
-	cursor: pointer;
+@media screen and (max-width: 768px) {
+	.mainContainer_common{
+		padding: 0px 25px;
+	}
+	.client-title {
+		font-size: 4rem;
+	}
+	
+	.client-summary{
+		font-size: 1rem;
+	}
 }

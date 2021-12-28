@@ -74,17 +74,6 @@
 	font-size: 14px;
 }
 
-@media screen and (max-width: 480px) {
-	.service-box {
-		max-width: 100%;
-	}
-}
-@media screen and (max-width: 768px) {
-	.service-box {
-		max-width: 50%;
-	}
-}
-
 .machine-infra {
 	padding-top: 5%;
 }
@@ -127,4 +116,26 @@
 
 .card_container .box {
 	width: 48%;
+}
+
+.productImage{
+	height: 200px;
+	width: calc((16/9) * 200)px;
+}
+
+@media screen and (max-width: 480px) {
+	.service-box {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.service-box {
+		max-width: 50%;
+	}
+
+	.productImage{
+		height: 90px;
+		width: calc((16/9) * 90)px;
+	}
 }
