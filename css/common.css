@@ -26,6 +26,7 @@ nav .logo {
 	font-size: 33px;
 	color: #fff;
 	font-weight: 600;
+	cursor: pointer;
 }
 nav .menu-btn img {
 	height: 40px;
@@ -166,10 +167,13 @@ nav ul li a {
 	transition: all 0.3s ease;
 }
 
-nav ul li a:hover,
 .active {
 	color: #fff;
 	background: #fd5618;
+}
+
+nav ul li a:hover {
+	background: #ff7b4bb7;
 }
 
 .card_container .box .inner::before {
@@ -243,7 +247,7 @@ nav ul li a:hover,
 	align-items: center;
 }
 
-.card_container .box .inner::after {
+.card_container ::after {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -274,4 +278,15 @@ nav ul li a:hover,
 .copyrightText a {
 	color: #fd5618;
 	text-decoration: none;
+}
+
+.map-parent-dv {
+	width: calc((100% - 200) / 3) px;
+	height: 300px;
+	border: 1px solid #fff;
+}
+
+.map-parent-dv #googleMap_Iframe {
+	width: 100%;
+	height: 100%;
 }
