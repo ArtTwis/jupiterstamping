@@ -72,37 +72,6 @@ footer .container .sec.aboutus {
 	width: 40%;
 }
 
-.sci {
-	margin-top: 20px;
-	display: flex;
-}
-
-.sci li {
-	list-style: none;
-}
-
-.sci li a {
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background: #222;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 10px;
-	text-decoration: none;
-	border-radius: 4px;
-}
-
-.sci li a:hover {
-	background: #fd5618;
-}
-
-.sci li a img {
-	width: 25px;
-	height: 25px;
-}
-
 .quickLinks {
 	position: relative;
 	width: 25%;

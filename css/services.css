@@ -116,12 +116,14 @@
 
 .card_container .box {
 	width: 48%;
+	min-height: 475px;
 }
 
 .productImage{
 	height: 200px;
 	width: calc((16/9) * 200)px;
 }
+
 
 @media screen and (max-width: 480px) {
 	.service-box {
