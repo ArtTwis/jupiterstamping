@@ -24,6 +24,7 @@ nav {
 }
 nav .logo {
 	font-size: 33px;
+	font-style: italic;
 	color: #fff;
 	font-weight: 600;
 	cursor: pointer;
