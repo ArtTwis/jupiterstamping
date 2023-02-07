@@ -123,32 +123,30 @@
                 var message = $('#Message').val();
 
                 var Body = 'Name: '+name+'<br> Sender: '+sender+'<br> Mobile: '+mobile+'<br> Message: '+ message;
+                
+                Email.send({
+                Host : "smtp.gmail.com",
+                Username : "gaurav1910kl@gmail.com",
+                Password : "",
+                To : 'iamgauravsharma1910@gmail.com',
+                From : 'sender',
+                Subject : "New Mail on website from: " +name,
+                Body : Body
+                }).then(
+                message => {
 
-            }
-
-
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "gaurav1910kl@gmail.com",
-            Password : "",
-            To : 'iamgauravsharma1910@gmail.com',
-            From : 'sender',
-            Subject : "New Mail on website from: " +name,
-            Body : Body
-            }).then(
-            message => {
-
-                if(message=='OK')
-                {
-                    alert("Thank you Your Email has been Send. Thanks for connecting")
-                }
-                    else
+                    if(message=='OK')
                     {
-                        console.error(message);
-                        alert('error in sending message.')
+                        alert("Thank you Your Email has been Send. Thanks for connecting")
                     }
+                        else
+                        {
+                            console.error(message);
+                            alert('error in sending message.')
+                        }
+                }
+                );
             }
-            );
         </script>
     </Body>
 
